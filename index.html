@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- 
+    Teeraphat Phungamkuew
+     6609612020    
+-->
+<head>
+    <title>Information From</title>
+</head>
+
+<body>
+    <style>
+        .form-container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 5px solid salmon;
+            border-radius: 5%;
+        }
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 5%;
+        }
+
+        .allForm {
+            margin-bottom: 10px;
+            margin-left: 10%;
+        }
+
+        .allForm label {
+            font-weight: bold;
+        }
+
+        .allForm input {
+            width: 80%;
+            padding: 5px;
+            border: 2px solid black;
+        }
+
+        .allForm input [type="summit"] {
+            width: 40%;
+            padding: 1px 2px;
+        }
+
+        .allForm input [type="radio"] {
+            width: 50%;
+        }
+
+        .Selet {
+            margin-bottom: 10px;
+            margin-left: 10%;
+        }
+
+        .Selet p {
+            font-weight: bold;
+        }
+
+        .Selet label {
+            margin-left: 2%;
+        }
+    </style>
+
+    <div class="form-container" <form id="Informationform" method="post">
+        <h1 style="font-size: 30px; text-align:center ;">
+            แบบฟอร์มการสมัครสมาชิกห้องสมุด
+        </h1>
+
+        <div class="allForm"><!--Name and Lastname-->
+            <label for="ThaiName">ชื่อ-นามสกุล :</label><br>
+            <input type="text" id="name" name="ThaiName"><br>
+        </div>
+
+        <div class="allForm">
+            <label for="EngName">Name-Lastname :</label><br>
+            <input type="text" id="name" name="EngName"><br>
+        </div>
+
+        <div class="allForm"><!-- ID -->
+            <label for="studentID">Student ID : </label><br>
+            <input type="text" id="studentID" name="studentID" />
+        </div>
+
+        <div class="Selet"><!-- gender -->
+            <p>เพศ :
+                <br>
+                <input type="radio" id="gender" name="เพศ" value="Male">
+                <label for="gender">Male</label>
+                <input type="radio" id="gender" name="เพศ" value="Female">
+                <label for="gender">Female</label><br>
+            </p>
+        </div>
+
+        <div class="allForm"><!-- มหาลัย -->
+            <label for="University">มหาวิทยาลัยที่กำลังศึกษา</label><br>
+            <input type="text" id="University" value=""><br>
+        </div>
+
+        <div class="allForm"><!-- คณะ -->
+            <label for="faculty">คณะที่ศึกษา :</label><br>
+            <input type="text" id="faculty"><br>
+        </div>
+
+        <div class="Selet"><!-- ชั้นปี -->
+            <p>ชั้นปีที่กำลังศึกษา :
+                <br>
+                <input type="radio" id="one" name="ชั้นปี">
+                <label for="one">ปี 1</label>
+                <input type="radio" id="two" name="ชั้นปี">
+                <label for="two">ปี 2</label>
+                <input type="radio" id="tree" name="ชั้นปี">
+                <label for="tree">ปี 3</label>
+                <input type="radio" id="four" name="ชั้นปี">
+                <label for="four">ปี 4</label>
+            </p>
+        </div>
+
+        <div class="allForm">
+            <p> Email address :
+                <br>
+                <input type="email" name="email">
+            </p>
+        </div>
+
+        <div class="allForm">
+            <p> วัน เดือน ปีเกิด :
+                <br>
+                <input type="date" name="birthdat" >
+            </p>
+        </div>
+
+        <div class="allForm">
+            <textarea name="message" style="width:200px; height: 200px;">
+    Comments
+                </textarea>
+        </div>
+
+        <div class="allForm">
+            <input type="submit" value="Submit" >
+        </div>
+        </form>
+        </fieldset>
+</body>
